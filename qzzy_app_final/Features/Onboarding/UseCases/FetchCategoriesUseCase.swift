@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import Combine
+import Alamofire
+
+
+class FetchOnboardingItemsUseCase {
+    private let onboardingRepository: OnboardingRepositoryProtocol
+
+    init(onboardingRepository: OnboardingRepositoryProtocol) {
+        self.onboardingRepository = onboardingRepository
+    }
+
+    func execute() -> AnyPublisher<[OnboardingItem], AFError> {
+        onboardingRepository.fetchOnboardingItems()
+    }
+}

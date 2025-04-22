@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+
+final class GlobalConstants {
+ static let onboarding = "Onboarding"
+}

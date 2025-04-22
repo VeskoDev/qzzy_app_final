@@ -8,17 +8,61 @@
 
 /* Begin PBXBuildFile section */
 		B7E918332DB7A2D6009B098C /* qzzy_app_finalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918322DB7A2D6009B098C /* qzzy_app_finalApp.swift */; };
-		B7E918352DB7A2D6009B098C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918342DB7A2D6009B098C /* ContentView.swift */; };
 		B7E918372DB7A2D7009B098C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E918362DB7A2D7009B098C /* Assets.xcassets */; };
 		B7E9183A2DB7A2D7009B098C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E918392DB7A2D7009B098C /* Preview Assets.xcassets */; };
+		B7E918492DB7A65E009B098C /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918482DB7A65E009B098C /* AppRouter.swift */; };
+		B7E9184B2DB7A687009B098C /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9184A2DB7A687009B098C /* AppConfig.swift */; };
+		B7E918512DB7A736009B098C /* StringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918502DB7A736009B098C /* StringFormatting.swift */; };
+		B7E918532DB7A754009B098C /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918522DB7A754009B098C /* Icons.swift */; };
+		B7E918552DB7A75D009B098C /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918542DB7A75D009B098C /* Images.swift */; };
+		B7E918572DB7A769009B098C /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918562DB7A769009B098C /* GlobalConstants.swift */; };
+		B7E9185B2DB7A881009B098C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9185A2DB7A881009B098C /* OnboardingView.swift */; };
+		B7E9185F2DB7B0F5009B098C /* DepedencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9185E2DB7B0F5009B098C /* DepedencyManager.swift */; };
+		B7E918612DB7B501009B098C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918602DB7B501009B098C /* NetworkManager.swift */; };
+		B7E9186C2DB7B6DA009B098C /* OnboardingItemDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9186B2DB7B6DA009B098C /* OnboardingItemDTO.swift */; };
+		B7E9186E2DB7B6FB009B098C /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9186D2DB7B6FB009B098C /* OnboardingItem.swift */; };
+		B7E918702DB7B71D009B098C /* OnboardingRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9186F2DB7B71D009B098C /* OnboardingRepositoryProtocol.swift */; };
+		B7E918722DB7B74C009B098C /* OnboardingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918712DB7B74C009B098C /* OnboardingRepository.swift */; };
+		B7E918762DB7B841009B098C /* FetchCategoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918752DB7B841009B098C /* FetchCategoriesUseCase.swift */; };
+		B7E918782DB7BB74009B098C /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918772DB7BB74009B098C /* OnboardingViewModel.swift */; };
+		B7E9187D2DB7BEDE009B098C /* AlamofireDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = B7E9187A2DB7BEDE009B098C /* AlamofireDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B7E9187F2DB7BF0A009B098C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B7E9187E2DB7BF0A009B098C /* Alamofire */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B7E9187C2DB7BEDE009B098C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B7E9187D2DB7BEDE009B098C /* AlamofireDynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B7E9182F2DB7A2D6009B098C /* qzzy_app_final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qzzy_app_final.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7E918322DB7A2D6009B098C /* qzzy_app_finalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qzzy_app_finalApp.swift; sourceTree = "<group>"; };
-		B7E918342DB7A2D6009B098C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B7E918362DB7A2D7009B098C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7E918392DB7A2D7009B098C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7E918482DB7A65E009B098C /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		B7E9184A2DB7A687009B098C /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		B7E918502DB7A736009B098C /* StringFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFormatting.swift; sourceTree = "<group>"; };
+		B7E918522DB7A754009B098C /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		B7E918542DB7A75D009B098C /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		B7E918562DB7A769009B098C /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		B7E9185A2DB7A881009B098C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B7E9185E2DB7B0F5009B098C /* DepedencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepedencyManager.swift; sourceTree = "<group>"; };
+		B7E918602DB7B501009B098C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B7E9186B2DB7B6DA009B098C /* OnboardingItemDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItemDTO.swift; sourceTree = "<group>"; };
+		B7E9186D2DB7B6FB009B098C /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
+		B7E9186F2DB7B71D009B098C /* OnboardingRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRepositoryProtocol.swift; sourceTree = "<group>"; };
+		B7E918712DB7B74C009B098C /* OnboardingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRepository.swift; sourceTree = "<group>"; };
+		B7E918752DB7B841009B098C /* FetchCategoriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCategoriesUseCase.swift; sourceTree = "<group>"; };
+		B7E918772DB7BB74009B098C /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E9187F2DB7BF0A009B098C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +82,7 @@
 			children = (
 				B7E918312DB7A2D6009B098C /* qzzy_app_final */,
 				B7E918302DB7A2D6009B098C /* Products */,
+				B7E918792DB7BEDE009B098C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +97,13 @@
 		B7E918312DB7A2D6009B098C /* qzzy_app_final */ = {
 			isa = PBXGroup;
 			children = (
-				B7E918322DB7A2D6009B098C /* qzzy_app_finalApp.swift */,
-				B7E918342DB7A2D6009B098C /* ContentView.swift */,
+				B7E9185D2DB7A9A5009B098C /* App */,
+				B7E918462DB7A608009B098C /* Utilites */,
+				B7E918442DB7A5BA009B098C /* Services */,
+				B7E918432DB7A5B4009B098C /* Router */,
+				B7E918422DB7A5AD009B098C /* Features */,
+				B7E918412DB7A5A8009B098C /* DI */,
+				B7E918402DB7A5A2009B098C /* Components */,
 				B7E918362DB7A2D7009B098C /* Assets.xcassets */,
 				B7E918382DB7A2D7009B098C /* Preview Content */,
 			);
@@ -67,6 +118,158 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B7E918402DB7A5A2009B098C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B7E918412DB7A5A8009B098C /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9185E2DB7B0F5009B098C /* DepedencyManager.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		B7E918422DB7A5AD009B098C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B7E918582DB7A7D2009B098C /* Onboarding */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B7E918432DB7A5B4009B098C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B7E918482DB7A65E009B098C /* AppRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B7E918442DB7A5BA009B098C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9184A2DB7A687009B098C /* AppConfig.swift */,
+				B7E918602DB7B501009B098C /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B7E918462DB7A608009B098C /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9184F2DB7A713009B098C /* Extensions */,
+				B7E9184D2DB7A706009B098C /* Constants */,
+				B7E9184C2DB7A701009B098C /* Assets */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		B7E9184C2DB7A701009B098C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B7E918522DB7A754009B098C /* Icons.swift */,
+				B7E918542DB7A75D009B098C /* Images.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B7E9184D2DB7A706009B098C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B7E918562DB7A769009B098C /* GlobalConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B7E9184F2DB7A713009B098C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B7E918502DB7A736009B098C /* StringFormatting.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B7E918582DB7A7D2009B098C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9186A2DB7B6C2009B098C /* DTO */,
+				B7E918692DB7B64F009B098C /* Model */,
+				B7E918682DB7B642009B098C /* UseCases */,
+				B7E918672DB7B63D009B098C /* Repository */,
+				B7E9185C2DB7A8F3009B098C /* ViewModel */,
+				B7E918592DB7A86F009B098C /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B7E918592DB7A86F009B098C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9185A2DB7A881009B098C /* OnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7E9185C2DB7A8F3009B098C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B7E918772DB7BB74009B098C /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B7E9185D2DB7A9A5009B098C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B7E918322DB7A2D6009B098C /* qzzy_app_finalApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B7E918672DB7B63D009B098C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9186F2DB7B71D009B098C /* OnboardingRepositoryProtocol.swift */,
+				B7E918712DB7B74C009B098C /* OnboardingRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B7E918682DB7B642009B098C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				B7E918752DB7B841009B098C /* FetchCategoriesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		B7E918692DB7B64F009B098C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9186D2DB7B6FB009B098C /* OnboardingItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7E9186A2DB7B6C2009B098C /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9186B2DB7B6DA009B098C /* OnboardingItemDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		B7E918792DB7BEDE009B098C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,12 +280,17 @@
 				B7E9182B2DB7A2D6009B098C /* Sources */,
 				B7E9182C2DB7A2D6009B098C /* Frameworks */,
 				B7E9182D2DB7A2D6009B098C /* Resources */,
+				B7E9187C2DB7BEDE009B098C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = qzzy_app_final;
+			packageProductDependencies = (
+				B7E9187A2DB7BEDE009B098C /* AlamofireDynamic */,
+				B7E9187E2DB7BF0A009B098C /* Alamofire */,
+			);
 			productName = qzzy_app_final;
 			productReference = B7E9182F2DB7A2D6009B098C /* qzzy_app_final.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +319,9 @@
 				Base,
 			);
 			mainGroup = B7E918262DB7A2D6009B098C;
+			packageReferences = (
+				B7E918622DB7B52F009B098C /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B7E918302DB7A2D6009B098C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +348,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7E918352DB7A2D6009B098C /* ContentView.swift in Sources */,
+				B7E9186E2DB7B6FB009B098C /* OnboardingItem.swift in Sources */,
+				B7E918552DB7A75D009B098C /* Images.swift in Sources */,
+				B7E9184B2DB7A687009B098C /* AppConfig.swift in Sources */,
+				B7E918762DB7B841009B098C /* FetchCategoriesUseCase.swift in Sources */,
+				B7E9186C2DB7B6DA009B098C /* OnboardingItemDTO.swift in Sources */,
+				B7E9185B2DB7A881009B098C /* OnboardingView.swift in Sources */,
+				B7E918612DB7B501009B098C /* NetworkManager.swift in Sources */,
+				B7E918532DB7A754009B098C /* Icons.swift in Sources */,
+				B7E918782DB7BB74009B098C /* OnboardingViewModel.swift in Sources */,
+				B7E918512DB7A736009B098C /* StringFormatting.swift in Sources */,
 				B7E918332DB7A2D6009B098C /* qzzy_app_finalApp.swift in Sources */,
+				B7E918702DB7B71D009B098C /* OnboardingRepositoryProtocol.swift in Sources */,
+				B7E918722DB7B74C009B098C /* OnboardingRepository.swift in Sources */,
+				B7E918572DB7A769009B098C /* GlobalConstants.swift in Sources */,
+				B7E918492DB7A65E009B098C /* AppRouter.swift in Sources */,
+				B7E9185F2DB7B0F5009B098C /* DepedencyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +569,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7E918622DB7B52F009B098C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7E9187A2DB7BEDE009B098C /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7E918622DB7B52F009B098C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		B7E9187E2DB7BF0A009B098C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7E918622DB7B52F009B098C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7E918272DB7A2D6009B098C /* Project object */;
 }

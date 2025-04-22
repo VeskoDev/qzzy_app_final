@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import Combine
+import Alamofire
+
+protocol OnboardingRepositoryProtocol {
+    func fetchOnboardingItems() -> AnyPublisher<[OnboardingItem], AFError>
+}
