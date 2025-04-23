@@ -26,7 +26,12 @@
 		B7E918762DB7B841009B098C /* FetchCategoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918752DB7B841009B098C /* FetchCategoriesUseCase.swift */; };
 		B7E918782DB7BB74009B098C /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918772DB7BB74009B098C /* OnboardingViewModel.swift */; };
 		B7E9187D2DB7BEDE009B098C /* AlamofireDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = B7E9187A2DB7BEDE009B098C /* AlamofireDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		B7E9187F2DB7BF0A009B098C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B7E9187E2DB7BF0A009B098C /* Alamofire */; };
+		B7E918822DB8DA74009B098C /* CustomAppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918812DB8DA74009B098C /* CustomAppBarView.swift */; };
+		B7E918842DB8DB06009B098C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B7E918832DB8DB06009B098C /* Alamofire */; };
+		B7E918892DB8E05D009B098C /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E918882DB8E05D009B098C /* AppColors.swift */; };
+		B7E9188B2DB8E7CB009B098C /* View+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9188A2DB8E7CB009B098C /* View+RoundedCorners.swift */; };
+		B7E9188D2DB8EA04009B098C /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9188C2DB8EA04009B098C /* Sizes.swift */; };
+		B7E918902DB8EC8C009B098C /* Text+Multiline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9188F2DB8EC8C009B098C /* Text+Multiline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +68,11 @@
 		B7E918712DB7B74C009B098C /* OnboardingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRepository.swift; sourceTree = "<group>"; };
 		B7E918752DB7B841009B098C /* FetchCategoriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCategoriesUseCase.swift; sourceTree = "<group>"; };
 		B7E918772DB7BB74009B098C /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		B7E918812DB8DA74009B098C /* CustomAppBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAppBarView.swift; sourceTree = "<group>"; };
+		B7E918882DB8E05D009B098C /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		B7E9188A2DB8E7CB009B098C /* View+RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorners.swift"; sourceTree = "<group>"; };
+		B7E9188C2DB8EA04009B098C /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		B7E9188F2DB8EC8C009B098C /* Text+Multiline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Multiline.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7E9187F2DB7BF0A009B098C /* Alamofire in Frameworks */,
+				B7E918842DB8DB06009B098C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +131,7 @@
 		B7E918402DB7A5A2009B098C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B7E918812DB8DA74009B098C /* CustomAppBarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -161,6 +172,8 @@
 		B7E918462DB7A608009B098C /* Utilites */ = {
 			isa = PBXGroup;
 			children = (
+				B7E9188E2DB8EA09009B098C /* Sizes */,
+				B7E918872DB8E050009B098C /* AppColors */,
 				B7E9184F2DB7A713009B098C /* Extensions */,
 				B7E9184D2DB7A706009B098C /* Constants */,
 				B7E9184C2DB7A701009B098C /* Assets */,
@@ -189,6 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				B7E918502DB7A736009B098C /* StringFormatting.swift */,
+				B7E9188A2DB8E7CB009B098C /* View+RoundedCorners.swift */,
+				B7E9188F2DB8EC8C009B098C /* Text+Multiline.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -270,6 +285,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B7E918872DB8E050009B098C /* AppColors */ = {
+			isa = PBXGroup;
+			children = (
+				B7E918882DB8E05D009B098C /* AppColors.swift */,
+			);
+			path = AppColors;
+			sourceTree = "<group>";
+		};
+		B7E9188E2DB8EA09009B098C /* Sizes */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9188C2DB8EA04009B098C /* Sizes.swift */,
+			);
+			path = Sizes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -289,7 +320,7 @@
 			name = qzzy_app_final;
 			packageProductDependencies = (
 				B7E9187A2DB7BEDE009B098C /* AlamofireDynamic */,
-				B7E9187E2DB7BF0A009B098C /* Alamofire */,
+				B7E918832DB8DB06009B098C /* Alamofire */,
 			);
 			productName = qzzy_app_final;
 			productReference = B7E9182F2DB7A2D6009B098C /* qzzy_app_final.app */;
@@ -351,15 +382,20 @@
 				B7E9186E2DB7B6FB009B098C /* OnboardingItem.swift in Sources */,
 				B7E918552DB7A75D009B098C /* Images.swift in Sources */,
 				B7E9184B2DB7A687009B098C /* AppConfig.swift in Sources */,
+				B7E9188B2DB8E7CB009B098C /* View+RoundedCorners.swift in Sources */,
 				B7E918762DB7B841009B098C /* FetchCategoriesUseCase.swift in Sources */,
 				B7E9186C2DB7B6DA009B098C /* OnboardingItemDTO.swift in Sources */,
+				B7E9188D2DB8EA04009B098C /* Sizes.swift in Sources */,
 				B7E9185B2DB7A881009B098C /* OnboardingView.swift in Sources */,
+				B7E918902DB8EC8C009B098C /* Text+Multiline.swift in Sources */,
 				B7E918612DB7B501009B098C /* NetworkManager.swift in Sources */,
 				B7E918532DB7A754009B098C /* Icons.swift in Sources */,
+				B7E918892DB8E05D009B098C /* AppColors.swift in Sources */,
 				B7E918782DB7BB74009B098C /* OnboardingViewModel.swift in Sources */,
 				B7E918512DB7A736009B098C /* StringFormatting.swift in Sources */,
 				B7E918332DB7A2D6009B098C /* qzzy_app_finalApp.swift in Sources */,
 				B7E918702DB7B71D009B098C /* OnboardingRepositoryProtocol.swift in Sources */,
+				B7E918822DB8DA74009B098C /* CustomAppBarView.swift in Sources */,
 				B7E918722DB7B74C009B098C /* OnboardingRepository.swift in Sources */,
 				B7E918572DB7A769009B098C /* GlobalConstants.swift in Sources */,
 				B7E918492DB7A65E009B098C /* AppRouter.swift in Sources */,
@@ -587,7 +623,7 @@
 			package = B7E918622DB7B52F009B098C /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = AlamofireDynamic;
 		};
-		B7E9187E2DB7BF0A009B098C /* Alamofire */ = {
+		B7E918832DB8DB06009B098C /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B7E918622DB7B52F009B098C /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;

@@ -9,5 +9,6 @@ import Foundation
 
 
 final class GlobalConstants {
- static let onboarding = "Onboarding"
+ static let title = "Qzzy"
+ static let onboardingInstruction = "Select a minimum of 3 categories"
 }

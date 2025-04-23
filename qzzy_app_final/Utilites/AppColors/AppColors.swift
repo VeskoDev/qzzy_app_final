@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct MyColorScheme {
+  static let softYellow = Color.softYellow
+  static let darkGreen = Color.darkGreen
+  static let black = Color.black
+  
+}

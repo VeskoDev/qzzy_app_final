@@ -12,22 +12,25 @@ struct OnboardingView: View {
     @ObservedObject private var viewModel = OnboardingViewModel()
     
     var body: some View {
-        VStack {
+        VStack() {
+          CustomAppBarView(title: GlobalConstants.title)
+          
             if viewModel.isLoading {
                 ProgressView()
+                    .frame(maxHeight: .infinity)
             } else {
                 OnboardingListView(onboardingItems: viewModel.onboardingItems)
             }
-            
+
             if let errorMessage = viewModel.errorMessage {
                 Text(errorMessage)
                     .foregroundColor(.red)
+                    .padding()
             }
         }
         .onAppear {
             viewModel.fetchOnboardingItems()
         }
-        .navigationTitle(GlobalConstants.onboarding)
     }
 }
 
@@ -47,6 +50,7 @@ private struct OnboardingListView: View {
         }
     }
 }
+
 
 
 #Preview {
